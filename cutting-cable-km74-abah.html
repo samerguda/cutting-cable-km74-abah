@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشكلة قطع الكابل الكيلو ٧٤ - خط ابها  </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dark-mode {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .small-button {
+            font-size: 12px;
+            padding: 5px 10px;
+        }
+
+        .button.print {
+            background-color: #2196F3;
+        }
+
+        .button.copy {
+            background-color: #FF9800;
+        }
+
+        .button.whatsapp {
+            background-color: #25D366;
+        }
+
+        .button.email {
+            background-color: #d44638;
+        }
+
+        .dark-mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+        #date-time {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #location {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <div id="date-time"></div>
+    <div id="location">
+        <h3>مشكلة قطع الكابل الكيلو ٧٤ - خط ابها</h3>
+        <strong>Location:</strong> 
+        <a href="https://maps.google.com/?q=17.907080,42.434036" target="_blank">17.907080, 42.434036</a>
+    </div>
+
+    <div id="map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.8969813196577!2d42.43184757549482!3d17.907080179403084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDU0JzI1LjUiTiA0MsKwMjYnMDMuMyJF!5e0!3m2!1sen!2ssa!4v1692800676659!5m2!1sen!2ssa"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    
+    <table>
+        <tr>
+            <th>Index</th>
+            <th>Description</th>
+            <th>Photo</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>مشكلة قطع الكابل الكيلو ٧٤ - خط ابها</td>
+            <td><a href="#">Photo1</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>مشكلة قطع الكابل الكيلو ٧٤ - خط ابها</td>
+            <td><a href="#">Photo2</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>مشكلة قطع الكابل الكيلو ٧٤ - خط ابها</td>
+            <td><a href="#">Photo3</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>مشكلة قطع الكابل الكيلو ٧٤ - خط ابها</td>
+            <td><a href="#">Photo4</a></td>
+        </tr>
+    </table>
+
+    <button class="button print" onclick="window.print()">Print</button>
+    <button class="button copy" onclick="copyContent()">Copy</button>
+    <button class="button whatsapp" onclick="sendWhatsApp()">Send by WhatsApp</button>
+    <button class="button email" onclick="sendEmail()">Send by Email</button>
+    <button class="button small-button dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+
+    <script>
+        // Set current date and time
+        document.getElementById('date-time').innerHTML = 'Date: ' + new Date().toLocaleString();
+
+        // Toggle dark mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        // Copy content function
+        function copyContent() {
+            const text = document.querySelector('table').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Content copied to clipboard');
+            });
+        }
+
+        // Send by WhatsApp function
+        function sendWhatsApp() {
+            const text = encodeURIComponent('مشكلة قطع الكابل الكيلو ٧٤ - خط ابها\nLocation: https://maps.google.com/?q=17.907080,42.434036');
+            const url = `https://wa.me/?text=${text}`;
+            window.open(url, '_blank');
+        }
+
+        // Send by Email function
+        function sendEmail() {
+            const subject = encodeURIComponent('Cable Issue Report');
+            const body = encodeURIComponent('مشكلة قطع الكابل الكيلو ٧٤ - خط ابها\nLocation: https://maps.google.com/?q=17.907080,42.434036');
+            const mailto = `mailto:?subject=${subject}&body=${body}`;
+            window.open(mailto, '_blank');
+        }
+    </script>
+
+</body>
+
+</html>
